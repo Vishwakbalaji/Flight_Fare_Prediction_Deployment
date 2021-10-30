@@ -31,7 +31,7 @@ def main():
     Duration = st.text_input("Duration","Type Here: Choose One [5400 - 148800]")
 
     if st.button("Predict"):
-        outputs=predict_forest(Airline,Source,Destination,Total_Stops,Additional_Info,month,flight_time,Duration)
+        outputs=predict_flight_fare(Airline,Source,Destination,Total_Stops,Additional_Info,month,flight_time,Duration)
         outputs = round(outputs,2)
         st.success('We suggest you to choose an Flight Ticket Fare coverage of Rs.{}'.format(output))
 
