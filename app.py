@@ -33,7 +33,7 @@ def main():
     if st.button("Predict"):
         outputs=predict_flight_fare(Airline,Source,Destination,Total_Stops,Additional_Info,month,flight_time,Duration)
         outputs = round(outputs,2)
-        st.success('We suggest you to choose an Flight Ticket Fare coverage of Rs.{}'.format(output))
+        st.success('We suggest you to choose an Flight Ticket Fare coverage of Rs.{}'.format(outputs))
 
 if __name__=='__main__':
     main()
